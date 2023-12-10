@@ -19,13 +19,14 @@ local opts = {
 		lazy = true,
 	},
 	install = {
-		colorscheme = { "nightfox" }, 
+		colorscheme = { "catppuccin" }, 
 	},
 	rtp = {
 		disabled_plugins =  {
 			"gzip",
 			"matchit", 
 			"matchparen", 
+      "netrw", 
 			"netrwPlugin",
 			"tarPlugin",
 			"tohtml",
@@ -39,4 +40,4 @@ local opts = {
 	
 }
 
-require("lazy").setup('plugins')
+require("lazy").setup('plugins', opts)
